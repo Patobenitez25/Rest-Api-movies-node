@@ -1,0 +1,41 @@
+# Recuperar todas las peliculas
+
+GET http://localhost:1234/movies 
+
+### Recuperar peliculas por id
+GET http://localhost:1234/movies/07cd1d07-ece2-11ef-b678-0a002700000e
+
+### Recuperar todas las peliculas por genero
+GET http://localhost:1234/movies?genre=ACTION
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "3 propiedades",
+    "year": 2004,
+    "director": "El momo",
+    "duration": 132,
+    "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+    "rate": 8.1,
+    "genre": [
+        "Sci-Fi"
+        ]
+}
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/8917fe37-efff-11ef-bbb6-cecd028ee826
+Content-Type: application/json
+
+{
+    "title": "Donatto returns",
+    "year": 2004,
+    "director": "La cobra",
+    "duration": 152,
+    "poster": "https://enagenda.com.ar/uploads/ckeditor/2024/12/20241229201349_img-6307.jpg",
+    "rate": 6.5
+}
+
+### Eliminar una pelicula
+DELETE http://localhost:1234/movies/91bf3e8d-effd-11ef-bbb6-cecd028ee826
