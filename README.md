@@ -23,7 +23,6 @@ Sigue estos pasos para clonar, instalar y ejecutar el proyecto localmente:
     cd Rest-Api-movies-node
 2. **Instalar dependencias**:
    ```bash
-    Copy
     npm install
    ```
 
@@ -33,7 +32,6 @@ Configurar variables de entorno en el archivo .env ubicado en la raiz del proyec
 Ejecutar el servidor:
 
 ```bash
-   Copy
    npm start
 ```
 El servidor estará disponible en http://localhost:1234.
